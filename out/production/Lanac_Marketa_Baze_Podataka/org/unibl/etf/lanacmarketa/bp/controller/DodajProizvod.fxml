@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.DodajProizvodController">
+   <children>
+      <VBox prefHeight="440.0" prefWidth="305.0" spacing="40.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <TextField fx:id="sifra" prefHeight="50.0" prefWidth="305.0" promptText="Sifra proizvoda" />
+            <TextField fx:id="naziv" prefHeight="50.0" prefWidth="305.0" promptText="Naziv proizvoda" />
+            <TextField fx:id="cijena" prefHeight="50.0" prefWidth="305.0" promptText="Cijena proizvoda" />
+            <Button fx:id="sacuvaj" mnemonicParsing="false" onAction="#sacuvajProizvod" prefHeight="97.0" prefWidth="305.0" style="-fx-background-color: #2A1C42;" text="Sacuvaj" textFill="#f8f0f0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

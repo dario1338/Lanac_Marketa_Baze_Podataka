@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.RadSaZaposlenimController">
+   <children>
+      <VBox layoutX="-5.0" prefHeight="470.0" prefWidth="252.0" spacing="15.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Button fx:id="dodaj" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#dodajProdavca" prefHeight="78.0" prefWidth="252.0" style="-fx-background-color: #2A1C42;" text="Dodaj" textFill="#f5f0f0">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="izmijeni" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#izmijeniMarket" prefHeight="78.0" prefWidth="252.0" style="-fx-background-color: #2A1C42;" text="Izmijeni" textFill="#f8f5f5">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="obrisi" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#obrisiProdavca" prefHeight="78.0" prefWidth="252.0" style="-fx-background-color: #2A1C42;" text="Obrisi" textFill="#fcfafa">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="prikaziSve" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#prikaziSveProdavce" prefHeight="78.0" prefWidth="252.0" style="-fx-background-color: #2A1C42;" text="Prikazi sve" textFill="#f5f2f2">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <HBox prefHeight="79.0" prefWidth="252.0">
+               <children>
+                  <ChoiceBox fx:id="nazivMarketaChoiceBox" prefHeight="37.0" prefWidth="131.0">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ChoiceBox>
+                  <Button fx:id="prikazi" alignment="CENTER" mnemonicParsing="false" onAction="#prikaziProdavcePoMarketu" prefHeight="77.0" prefWidth="147.0" style="-fx-background-color: #2A1C42;" text="Prikazi" textFill="#f8f3f3">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tabela" layoutX="247.0" prefHeight="470.0" prefWidth="648.0">
+        <columns>
+          <TableColumn fx:id="jmb" prefWidth="205.0" text="JMB" />
+          <TableColumn fx:id="ime" prefWidth="160.0" text="Ime" />
+            <TableColumn fx:id="prezime" prefWidth="160.0" text="Prezime" />
+            <TableColumn fx:id="idMarketa" prefWidth="121.0" text="Id_Marketa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

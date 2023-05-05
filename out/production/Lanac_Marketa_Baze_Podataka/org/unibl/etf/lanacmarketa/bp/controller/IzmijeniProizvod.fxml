@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="462.0" prefWidth="299.0" style="-fx-background-color: #3F2B63;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.IzmijeniProizvodController">
+   <children>
+      <VBox prefHeight="455.0" prefWidth="299.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="83.0" prefWidth="299.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="147.0" text="Sifra proizvoda" textFill="#f8f5f5" />
+                  <TextField fx:id="sifra" prefHeight="60.0" prefWidth="170.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="147.0" text="Naziv proizvoda" textFill="#f5f0f0" />
+                  <TextField fx:id="naziv" prefHeight="60.0" prefWidth="170.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="147.0" text="Cijena proizvoda" textFill="#f8f6f6" />
+                  <TextField fx:id="cijena" prefHeight="60.0" prefWidth="170.0" />
+               </children>
+            </HBox>
+            <Button fx:id="sacuvaj" mnemonicParsing="false" onAction="#izmijeniProizvod" prefHeight="86.0" prefWidth="306.0" style="-fx-background-color: #2A1C42;" text="Sacuvaj" textFill="#f5efef">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

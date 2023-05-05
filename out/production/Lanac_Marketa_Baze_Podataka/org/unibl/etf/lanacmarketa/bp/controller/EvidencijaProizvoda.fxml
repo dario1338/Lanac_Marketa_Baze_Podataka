@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="393.0" prefWidth="280.0" style="-fx-background-color: #3F2B63;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.EvidencijaProizvodaController">
+   <children>
+      <VBox prefHeight="393.0" prefWidth="280.0" spacing="40.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="73.0" prefWidth="280.0" text="Odaberite market" textFill="#f2eded" />
+            <ChoiceBox fx:id="marketiChoiceBox" prefHeight="70.0" prefWidth="292.0" />
+            <Button fx:id="potvrdi" mnemonicParsing="false" onAction="#potvrdiMarket" prefHeight="70.0" prefWidth="281.0" text="Potvrdi" />
+         </children>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

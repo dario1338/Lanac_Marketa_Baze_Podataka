@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="369.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.IzlazRobeController">
+   <children>
+      <TableView fx:id="izlazRobeTableView" prefHeight="369.0" prefWidth="738.0">
+        <columns>
+          <TableColumn fx:id="market" prefWidth="125.0" text="Naziv marketa" />
+          <TableColumn fx:id="sifra" prefWidth="120.0" text="Sifra proizvoda" />
+            <TableColumn fx:id="nazivP" prefWidth="248.0" text="Naziv proizvoda" />
+            <TableColumn fx:id="izlaz" prefWidth="125.0" text="Prodano" />
+            <TableColumn fx:id="stanje" prefWidth="119.0" text="Trenutno stanje" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

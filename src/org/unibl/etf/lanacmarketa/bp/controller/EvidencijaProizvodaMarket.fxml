@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="445.0" prefWidth="711.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.EvidencijaProizvodaMarketController">
+   <children>
+      <VBox prefHeight="445.0" prefWidth="212.0" spacing="20.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Label fx:id="imeMarketa" alignment="CENTER" prefHeight="70.0" prefWidth="214.0" text="Label" textFill="#eeeaea" />
+            <ChoiceBox fx:id="proizvodiChoiceBox" prefHeight="70.0" prefWidth="212.0" />
+            <Button fx:id="dodaj" mnemonicParsing="false" onAction="#dodajProizvodUMarket" prefHeight="70.0" prefWidth="212.0" style="-fx-background-color: #7FFF00;" text="Dodaj" />
+            <Button fx:id="obrisi" mnemonicParsing="false" onAction="#obrisiProzvod" prefHeight="70.0" prefWidth="212.0" style="-fx-background-color: #f08080;" text="Obrisi" />
+            <HBox prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="unesiKolicinu" prefHeight="69.0" prefWidth="100.0" promptText="Kolicina" />
+                  <Button fx:id="izmijeni" mnemonicParsing="false" onAction="#izmijeniProizvod" prefHeight="69.0" prefWidth="112.0" style="-fx-background-color: Yellow;" text="Izmijeni" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="evidencijaProizvodaTableView" layoutX="212.0" onSort="#loadDataToTable" prefHeight="445.0" prefWidth="499.0">
+        <columns>
+          <TableColumn fx:id="sifra" prefWidth="144.0" text="Sifra" />
+          <TableColumn fx:id="naziv" minWidth="0.0" prefWidth="222.0" text="Naziv" />
+            <TableColumn fx:id="kolicina" prefWidth="132.0" text="Kolicina" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

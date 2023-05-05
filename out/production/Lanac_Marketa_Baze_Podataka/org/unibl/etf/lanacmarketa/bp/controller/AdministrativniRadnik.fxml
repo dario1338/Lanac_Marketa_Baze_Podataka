@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.AdministrativniRadnikMenuController">
+   <children>
+      <MenuBar layoutY="8.0" prefHeight="38.0" prefWidth="934.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Zaposleni">
+            <items>
+              <MenuItem fx:id="radSaZaposlenim" mnemonicParsing="false" onAction="#radSaZaposlenimEvent" text="Rad sa zaposlenim" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Proizvodi">
+            <items>
+              <MenuItem fx:id="proizvodi" mnemonicParsing="false" onAction="#proizvodiEvent" text="Rad sa proizvodima" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Evidencija">
+            <items>
+              <MenuItem fx:id="evidencijaProizvoda" mnemonicParsing="false" onAction="#evidencijaProizvodaEvent" text="Evidencija proizvoda" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Izvjestaji">
+              <items>
+                <MenuItem fx:id="izlazRobe" mnemonicParsing="false" onAction="#izlazRobeEvent" text="Izlaz robe u posljednjih sedam dana" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

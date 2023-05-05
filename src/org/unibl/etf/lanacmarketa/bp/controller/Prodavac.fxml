@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="659.0" prefWidth="1044.0" style="-fx-background-color: #a9a9a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.ProdavacMenuController">
+   <children>
+      <AnchorPane fx:id="pane" layoutX="273.0" prefHeight="659.0" prefWidth="772.0">
+         <children>
+            <HBox layoutX="41.0" layoutY="37.0" prefHeight="56.0" prefWidth="691.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="unesiSifruProizvoda" prefHeight="55.0" prefWidth="582.0" promptText="Unesite sifru proizvoda" />
+                  <TextField fx:id="kolicina" prefHeight="55.0" prefWidth="371.0" promptText="Kolicina" />
+                  <Button fx:id="dodajProizvod" mnemonicParsing="false" onAction="#dodajProizvod" prefHeight="55.0" prefWidth="315.0" style="-fx-background-color: #3F2B63;" text="Dodaj" textFill="#f5f0f0">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="40.0" layoutY="425.0" prefHeight="209.0" prefWidth="693.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="210.0" prefWidth="210.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="unesiteSifruBK" prefHeight="65.0" prefWidth="210.0" promptText="Unesite sifru BONUS kartice" />
+                        <TextArea fx:id="bodovi" prefHeight="133.0" prefWidth="210.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="210.0" prefWidth="210.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="potvrdiBonusKarticu" mnemonicParsing="false" onAction="#potvrdiBonusKarticuE" prefHeight="65.0" prefWidth="214.0" style="-fx-background-color: skyblue;" text="Potvrdi BK">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Button fx:id="dodajBodove" mnemonicParsing="false" onAction="#dodajBodoveE" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: skyblue;" text="Dodaj bodove">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Button fx:id="skiniBodove" mnemonicParsing="false" onAction="#skiniBodoveE" prefHeight="65.0" prefWidth="216.0" style="-fx-background-color: skyblue;" text="Skini bodove">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="209.0" prefWidth="234.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="potvrdiKupovinu" mnemonicParsing="false" onAction="#potvrdiKupuvinuR" prefHeight="63.0" prefWidth="233.0" style="-fx-background-color: #3F2B63;" text="POTVRDI KUPOVINU" textFill="#f8f4f4">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TableView fx:id="tabelaDodaniProizvodi" layoutX="40.0" layoutY="144.0" prefHeight="247.0" prefWidth="564.0">
+              <columns>
+                <TableColumn fx:id="sifra" prefWidth="83.0" text="Sifra" />
+                <TableColumn fx:id="naziv" prefWidth="159.0" text="Naziv" />
+                  <TableColumn fx:id="cijena" prefWidth="96.0" text="Cijena" />
+                  <TableColumn fx:id="kolicinaTabela" prefWidth="99.0" text="Kolicina" />
+                  <TableColumn fx:id="ukupno" prefWidth="126.0" text="Ukupno" />
+              </columns>
+            </TableView>
+            <Button fx:id="ukloni" layoutX="625.0" layoutY="144.0" mnemonicParsing="false" onAction="#ukloniProizvod" prefHeight="55.0" prefWidth="110.0" style="-fx-background-color: #3F2B63;" text="Ukloni" textFill="#fff8f8">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Label fx:id="zaUplatu" alignment="CENTER" layoutX="625.0" layoutY="336.0" prefHeight="55.0" prefWidth="110.0" style="-fx-background-color: white;" text="Za uplatu" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="-1.0" prefHeight="659.0" prefWidth="275.0" style="-fx-background-color: #708090;">
+         <children>
+            <VBox prefHeight="393.0" prefWidth="275.0" spacing="80.0">
+               <children>
+                  <Label fx:id="labelProdavac" alignment="BASELINE_LEFT" prefHeight="75.0" prefWidth="289.0" text="Label" textFill="#221515">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelKasa" alignment="BASELINE_LEFT" prefHeight="75.0" prefWidth="279.0" text="Label" textFill="#391b1b">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="noviRacun" mnemonicParsing="false" onAction="#kreirajNoviRacun" prefHeight="85.0" prefWidth="275.0" style="-fx-background-color: #3F2B63;" text="NOVI RACUN" textFill="#f8f6f6">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="zakljuciK" alignment="CENTER" mnemonicParsing="false" onAction="#zakljuciKasu" prefHeight="85.0" prefWidth="277.0" style="-fx-background-color: red;" text="ZAKLJUCI KASU" textFill="#f5ebeb">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

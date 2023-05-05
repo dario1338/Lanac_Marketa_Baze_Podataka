@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="458.0" prefWidth="300.0" style="-fx-background-color: #3F2B63;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.DodajProdavcaController">
+   <children>
+      <VBox layoutY="44.0" prefHeight="414.0" prefWidth="300.0" spacing="30.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <TextField fx:id="jmb" onAction="#sacuvajProdavca" prefHeight="45.0" prefWidth="211.0" promptText="JMB" />
+            <TextField fx:id="ime" layoutX="10.0" layoutY="10.0" prefHeight="45.0" promptText="Ime" />
+            <TextField fx:id="prezime" layoutX="10.0" layoutY="41.0" prefHeight="45.0" promptText="Prezime" />
+            <ChoiceBox fx:id="imeMarketa" prefWidth="150.0" />
+            <Button fx:id="sacuvaj" mnemonicParsing="false" onAction="#sacuvajProdavca" onDragDetected="#sacuvajProdavca" prefHeight="65.0" prefWidth="300.0" style="-fx-background-color: #2A1C42;" text="Sacuvaj" textFill="#f8f4f4" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="420.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.lanacmarketa.bp.controller.RadSaProizvodimaController">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="424.0" prefWidth="241.0" spacing="20.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Button fx:id="dodaj" mnemonicParsing="false" onAction="#dodajProizvod" prefHeight="90.0" prefWidth="250.0" style="-fx-background-color: #2A1C42;" text="Dodaj" textFill="#f8f8f8" />
+            <Button fx:id="izmijeni" mnemonicParsing="false" onAction="#izmijeniProizvod" prefHeight="90.0" prefWidth="250.0" style="-fx-background-color: #2A1C42;" text="Izmijeni" textFill="#fcf9f9" />
+            <Button fx:id="obrisi" mnemonicParsing="false" onAction="#obrisiProizvod" prefHeight="90.0" prefWidth="250.0" style="-fx-background-color: #2A1C42;" text="Obrisi" textFill="#fcf6f6" />
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="proizvodTableView" layoutX="238.0" prefHeight="424.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="sifraProizvoda" prefWidth="137.0" text="Sifra" />
+          <TableColumn fx:id="nazivProizvoda" prefWidth="257.0" text="Naziv" />
+            <TableColumn fx:id="cijenaProizvoda" minWidth="0.0" prefWidth="139.0" text="Cijena" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
